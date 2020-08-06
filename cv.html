@@ -4,52 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programador Jedi</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
-    
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">  
+
+    <script src="https://kit.fontawesome.com/4df7db9872.js" crossorigin="anonymous"></script>
    
 </head>
+
 <body>
-    <header>        
-        <h1>Programador Web Junior</h1>
-        <img src="./img/Programador-Jedi.png" width="100px" >
 
-        <div id="perfil">
-            <ul>
-                <li>
-                    Matheus Willock
-                </li> 
+    <header>
 
-                <li>
-                    <a href="tel:+5511988280219">+55 (11) 988280219</a>
-                </li>            
-
-                <li>
-                    <a href="http://wa.me/+5511976052723?text=Ol%C3%A1,%0D%0A%0D%0A%20gostei%20do%20seu%20perfil!%0D%0A" target="_blank" rel="noopener noreferrer">whatsapp!</a>
-                </li>
-
-                <li>
-                    <a href="mailto:matheuswillock@outlook.com?Subject=Vaga de Programador Jr.&Body=Olá, gostei do seu perfil!">matheuswillock@outlook.com</a>
-                </li>
-
-                <li>
-                    <a href="http://github.com/matheuswillock" target="_blank" rel="noopener noreferrer">github.com/matheuswillock</a>
-                </li>
-
-                <li>
-                    <a href="http://linkedin.com/in/matheuswillock" target="_blank" rel="noopener noreferrer">linkedin/in/matheuswillock</a>
-                </li>
-            </ul>
+        <div id="titulo">
+            <h1>Programador Jedi Web Junior</h1>
+            <h3>Matheus Willock</h3>            
+        </div>   
+        
+        <div class="logo">
+            <img src="./assets/img/Programador-Jedi.png" width="100px" >
         </div>
-    </header>
+        
+
+        <div class="social-media">
+            
+            <a href="http://github.com/matheuswillock" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a> | 
+
+            <a href="http://linkedin.com/in/matheuswillock" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> |         
+            
+            <a href="http://wa.me/+5511976052723?text=Ol%C3%A1,%0D%0A%0D%0A%20gostei%20do%20seu%20perfil!%0D%0A" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp-square"></i></a> |
+
+            <a href="tel:+5511988280219"><i class="fas fa-phone-square-alt"></i></a> | 
+            
+            <a href="mailto:matheuswillock@outlook.com?Subject=Vaga de Programador Jr.&Body=Olá, gostei do seu perfil!"><i class="fas fa-at"></i></a> 
+            
+        </div>
+    </header><br>
 
     <hr>
+    
 
     <main>
+
         <section>
             <h2>Sobre</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus mollitia ab nulla amet at officia exercitationem tempora tenetur sequi rem, quam ipsa quisquam sapiente iure nisi laborum, esse veritatis facere.</p>
         </section>
+
         <section>
             <h2>Skills</h2>
             <h3>Soft Skills</h3>
@@ -72,11 +74,10 @@
                 <ul>
                     <li>PHP</li>
                     <li>Node.JS</li>
-                    <li></li>
-                    <li></li>
                 </ul>                
             </ul>
         </section>
+
         <section>
             <h2>Formação</h2>
             <table>
@@ -94,19 +95,106 @@
                 </tr>
             </table>
         </section>
+
         <section>
             <h2>Experiência</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet atque suscipit velit pariatur iure eius? Praesentium dignissimos neque aliquid iure nostrum similique dolorum, nam distinctio consequatur, facere quaerat adipisci ab.</p>
         </section>
+
     </main>
+    
+        <hr>
+    
+
+    <div id="form">
+        
+        <h2>Entre em contato!</h2>
+        
+        <div class="contact">
+            <form action="./tankyou.html" method="get" enctype="multipart/form-data">
+
+                <label for="">Empresa interessada.</label><br>
+                <input type="text"><br><br>
+                <label for="">Nacionalidade da Empresa.</label><br>
+                <input type="text"><br><br>
+                <label for="">E-mail para contato.</label><br>
+                <input type="email"><br><br>
+                <label for="">Telefone para contato.</label><br>
+                <input type="tel"><br><br>
+
+                <label for="uf">Sede</label>
+
+                <select name="uf" id="uf">
+                    <option disable value="UF">UF</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                    <option value="SC">SC</option>
+                    
+                </select><br><br>
+
+                <label for="">Atuação</label><br>            
+                <input type="checkbox" id="FE" name="FE" value="FE">
+                <label for="FE">front-end</label><br>
+                <input type="checkbox" id="BA" name="BA" value="BA">
+                <label for="BA"> Back-end</label><br>
+                <input type="checkbox" id="JA" name="JA" value="JA">
+                <label for="JA"> Jovem Aprendiz</label><br><br>
+                
+
+                <label for="uf">Tipo de Contratação</label><br>
+                <select name="tipo" id="tipo">
+                    <option disable value="tipo"></option>
+                    <option value="CLT">CLT</option>
+                    <option value="JA">Jovem Aprendiz</option>
+                    <option value="PJ">PJ</option>
+                    
+                    
+                </select><br><br>
+                
+                <label for="">Cor do logo da Empresa</label><br>
+                <input type="color"><br><br>
+                <label for="">Data prevista para início.</label><br>
+                <input type="date"><br><br>
+                <label for="">Comentários:</label><br>        
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                <button type="reset">Limpar</button><br><br>
+                <button type="submit">Enviar!</button><br><br>
+            </form>
+
+        </div>
+
+    </div>
+
+    
 
     <hr>
 
     <footer>
-        <p>Matheus Willock 2020 &copy; |
-        <a href="mailto:matheuswillock@outlook.com?Subject=Vaga de Programador Jr.&Body=Olá, gostei do seu perfil!">matheuswillock@outlook.com</a> |
-        <a href="http://wa.me/+5511976052723?text=Ol%C3%A1,%0D%0A%0D%0A%20gostei%20do%20seu%20perfil!%0D%0A" target="_blank" rel="noopener noreferrer">whatsapp!</a> | <a href="http://github.com/matheuswillock" target="_blank" rel="noopener noreferrer">github.com/matheuswillock</a> | <a href="http://linkedin.com/in/matheuswillock" target="_blank" rel="noopener noreferrer">linkedin/in/matheuswillock</a></p>
+        <div id="topo">
+        <a href="#top">Ir para o topo</a>
+        </div>
 
+        <div class="social-media">
+            Matheus Willock 2020 &copy; |
+            
+            <a href="http://github.com/matheuswillock" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a> | 
+
+            <a href="http://linkedin.com/in/matheuswillock" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> |
+
+            <a href="http://wa.me/+5511976052723?text=Ol%C3%A1,%0D%0A%0D%0A%20gostei%20do%20seu%20perfil!%0D%0A" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp-square"></i></a> |
+
+            <a href="tel:+5511988280219"><i class="fas fa-phone-square-alt"></i></a> | 
+
+            <a href="mailto:matheuswillock@outlook.com?Subject=Vaga de Programador Jr.&Body=Olá, gostei do seu perfil!"><i class="fas fa-at"></i></a> 
+        </div>
+        
+        <div class="logo">
+            <img src="./assets/img/Baby Yoda 2.svg">
+        </div>
+                
+        
+       
     </footer>
     
 </body>
