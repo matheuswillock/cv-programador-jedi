@@ -9,13 +9,20 @@
 
 body{
     background-color: rgba(5, 2, 44, 0.842);
-    color: whitesmoke   
+    color: #f0f0f0
 }
 
 tr,
 th,
 td{
     border: 2px solid;
+    padding: 5px;
+    
+} 
+
+.center {  
+    margin: 20px auto 35px auto;
+
 }
 
 a{
@@ -24,8 +31,8 @@ a{
 }
 
 a :hover {
-    transition: 0.4s;
-    color: rgba(44, 167, 44, 0.548);   
+    transition: 0.2s;
+    color: rgb(42, 187, 42);    
     -ms-transform: scale(1.3);
     transform: scale(1.3);    
 }
@@ -44,7 +51,8 @@ header ul{
 header img{
     margin-top: 20px;
     width: 130px;
-    height: auto;    
+    height: auto;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.719));    
 }
 
 .social-media{
@@ -55,7 +63,30 @@ header img{
 
 main{
     margin: 15px;
-    padding: 10px;
+    padding: 10px;  
+}
+
+main h2 {
+    color: rgba(255, 147, 7, 0.918);
+    margin-bottom: 10px;
+}
+
+main div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ main div ul{
+    margin-bottom: 15px;
+    margin-top: 10px;
+} 
+
+main div ul li{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.end {
+    color: rgb(42, 187, 42);   
 }
 
 #form{
@@ -97,7 +128,7 @@ footer img{
 
 #topo{
    
-    background-color: rgba(5, 2, 44, 0.205);
+    background: rgba(5, 2, 44);
     position: fixed;
     display: block;
     bottom: 12px;
@@ -107,7 +138,7 @@ footer img{
 }
 
 #topo:hover{
-    background: rgba(5, 2, 44);
+    
+    background-color: rgba(27, 10, 73, 0.685);
     transition: 0.4s;    
 }
-
