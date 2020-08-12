@@ -32,3 +32,26 @@ p{
     height: auto;
     margin: 0 auto 0 auto;
 }
+
+/* scrollbar */
+
+/* Responsável por escolher o tamanho e o que você vai atribuir à sua barra de rolagem; */
+::-webkit-scrollbar{
+    width: 10px;
+    height: auto;      
+  }
+
+  /* Área que fica ao fundo da barra de rolagem, ou seja, o caminho que a barra vai percorrer; */
+  ::-webkit-scrollbar-track-piece {
+    background-color:  rgba(102, 101, 101, 0.226);
+    border-radius: 200px; 
+    margin-top: 15px;
+    margin-bottom: 15px;    
+  }
+ 
+  /* Responsável por editar como será a scrollbar na vertical do site; */
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: gray;
+    border-radius: 200px; 
+  }
