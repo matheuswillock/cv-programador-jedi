@@ -22,6 +22,5 @@ O repositório será atualizado de acordo com o andamento das aulas, ou seja. Re
     * Finalizado a primeira etapa do projeto.
         1. Adicionar e estilizar as informações.
 
-## Meta
-
+#
 Matheus Willock – [@matheuswillock](https://linkedin.com/in/matheuswillock) - matheuswillock@outlook.com
